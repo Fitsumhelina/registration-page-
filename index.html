@@ -1,0 +1,147 @@
+<html>
+<head>
+  <title>Tech Tonic</title>
+  <style>
+  
+    body {
+      background-color: #deddd9;
+      margin:20;
+    }
+
+    header {
+      text-align: center;
+      padding: 15px;
+      background-color: #4CAF50;
+      color: white;
+      position: relative;
+      border-radius: 10px;
+      margin: auto;
+      max-width: 500px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      font-size: 24px;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    .circle-image {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+
+    .circle-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .container {
+      text-align: center;
+      max-width: 500px;
+      margin: auto;
+      margin-bottom: 10px;
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    select {
+      font-size: 16px;
+    }
+
+    p {
+      font-size: 14px;
+      color: #666;
+      text-align: center;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 18px;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #20B4BD;
+    }
+
+    hr {
+      margin-top: 30px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="circle-image">
+      <img src="pp.jpg" alt="Top Image" onclick="alert('Tech Tonic Tribe ')">
+    </div>
+    <h2>Welcome to Tech Tonic Tribe</h2>
+  </header>
+  
+  <br>
+
+  <div class="container">
+    <label for="t1">Full Name</label>
+    <input type="text" id="t1">
+    <label for="t2">ID NO</label>
+    <input type="text" id="t2" pattern="[0-9]*">
+    
+    
+    <p>Gender</p>
+    <label for="r1">MALE</label>
+    <input type="radio" id="r1" name="sex" value="male">
+    <label for="r2">FEMALE</label>
+    <input type="radio" id="r2" name="sex" value="female">
+    <label for="colleges">Select Your College</label>
+    <select id="colleges" name="Your College">
+      <option>Engineering</option>
+      <option selected >Computing</option>
+    </select>
+    <label for="message">Do you have any Message</label>
+    <textarea id="message" rows="4" placeholder="Type your message here..."></textarea>
+    <button type="submit" onclick="alert(' successfuly Registered')">Register</button>
+  </div>
+
+  <hr>
+
+  <footer>
+    <p>This page is designed by: FITSUM HELINA<br>©2024</p>
+  </footer>
+
+</body>
+</html>
